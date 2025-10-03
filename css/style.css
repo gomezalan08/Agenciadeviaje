@@ -1,0 +1,198 @@
+/* ====== INICIO INDEX ====== */
+.hero {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero p {
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+.form-busqueda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.form-busqueda input,
+.form-busqueda select,
+.form-busqueda button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.form-busqueda button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+.destinos .card,
+.paquetes .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destinos .card:hover,
+.paquetes .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.precio strong {
+  color: #dc3545;
+  font-size: 1.2rem;
+}
+.resenas blockquote {
+  background: #f8f9fa;
+  border-left: 5px solid #007bff;
+  padding: 15px;
+  border-radius: 5px;
+  font-style: italic;
+}
+.newsletter {
+  background: #007bff;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.newsletter input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  max-width: 80%;
+}
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  background: #ffc107;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* ====== FIN INDEX ====== */
+
+/* ====== INICIO DESTINOS ====== */
+.destinos-page .hero {
+  background: url('https://images.unsplash.com/photo-1505761671935-60b3a7427bad') no-repeat center center/cover;
+  padding: 100px 20px;
+  color: #fff;
+  text-align: center;
+}
+.destinos-page h1 {
+  font-size: 2.5rem;
+}
+.destinos-page .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destinos-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+/* ====== FIN DESTINOS ====== */
+
+/* ====== INICIO PAQUETES ====== */
+.paquetes-page .hero {
+  background: url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff') no-repeat center center/cover;
+  padding: 100px 20px;
+  color: #fff;
+  text-align: center;
+}
+.paquetes-page h1 {
+  font-size: 2.5rem;
+}
+.paquetes-page .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.paquetes-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+/* ====== FIN PAQUETES ====== */
+
+/* ====== INICIO RESEÑAS ====== */
+.reseñas-page .hero {
+  background: url('https://images.unsplash.com/photo-1539576776193-2c07122e5fee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmlhamVyb3N8ZW58MHx8MHx8fDA%3D') no-repeat center center/cover;
+  padding: 100px 20px;
+  color: #fff;
+  text-align: center;
+}
+.reseñas-page h1 {
+  font-size: 2.5rem;
+}
+.reseñas-page blockquote {
+  background: #f8f9fa;
+  border-left: 5px solid #007bff;
+  padding: 15px;
+  border-radius: 5px;
+  font-style: italic;
+}
+/* ====== FIN RESEÑAS ====== */
+
+/* ====== INICIO CONTACTO ====== */
+.contacto-page .hero {
+  background: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df') no-repeat center center/cover;
+  padding: 100px 20px;
+  color: #fff;
+  text-align: center;
+}
+.contacto-page h1 {
+  font-size: 2.5rem;
+}
+.contacto-page form {
+  max-width: 600px;
+  margin: auto;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contacto-page form input,
+.contacto-page form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.contacto-page form button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contacto-page form button:hover {
+  background: #0056b3;
+}
+/* ====== FIN CONTACTO ====== */
+
+
+/* ====== INICIO FOOTER Y NAVBAR ====== */
+
+.site-header {
+  background: #0b1722; 
+  color: #fff;
+}
+.site-header .navbar {
+  padding: 0.75rem 0;
+}
+.navbar-brand { color: #fff; }
+.navbar .nav-link { color: rgba(255,255,255,0.85); }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: #ffd54a; }
+
+
+.navbar-nav.gap-3 { gap: 1rem; }
+
+.site-footer {
+  background: #07121a;
+  color: #cfe8f3;
+}
+.site-footer a { color: #cfe8f3; text-decoration: none; }
+.site-footer a:hover { color: #ffd54a; }
+
+
+/* ====== FIN FOOTER Y NAVBAR ====== */

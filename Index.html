@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nombre Agencia — Inicio</title>
+
+  <!-- Bootstrap (CSS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR (mismo en todas las páginas) -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand fw-bold" href="index.html">Nombre Agencia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+            <li class="nav-item"><a class="nav-link" href="paquetes.html">Paquetes</a></li>
+            <li class="nav-item"><a class="nav-link" href="resenas.html">Reseñas</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero hero-index" aria-labelledby="hero-title">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner text-center text-light">
+      <h1 id="hero-title" class="display-4 fw-bold">Descubre el mundo</h1>
+      <p class="lead subtitulo">Encuentra tu próxima aventura con los mejores destinos y ofertas</p>
+
+      <form class="search-form d-flex flex-wrap justify-content-center gap-2 mt-4" role="search" aria-label="Buscar destino">
+        <div class="form-floating w-100 w-sm-50 w-md-25">
+          <input id="destino" class="form-control" type="text" placeholder="Destino">
+          <label for="destino">Destino</label>
+        </div>
+
+        <div class="form-floating w-100 w-sm-50 w-md-20">
+          <input id="fecha" class="form-control" type="date">
+          <label for="fecha">Fecha ida</label>
+        </div>
+
+        <div class="form-floating w-100 w-sm-50 w-md-15">
+          <select id="personas" class="form-select">
+            <option value="1">1 persona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+          </select>
+          <label for="personas">Personas</label>
+        </div>
+
+        <div class="d-grid d-sm-block">
+          <button class="btn btn-warning fw-bold px-4" type="submit">Buscar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <main class="container py-5">
+
+    <!-- DESTINOS DESTACADOS -->
+    <section id="destinos-destacados" class="mb-5">
+      <h2 class="section-title">Destinos destacados</h2>
+      <p class="section-sub">Explora los lugares más increíbles del mundo</p>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <!-- París -->
+        <article class="col">
+          <div class="card h-100 shadow-sm card-stand">
+            <img src="img/paris.jpg"
+                 class="card-img-top" alt="París - Torre Eiffel, Francia">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">París, Francia</h3>
+              <p class="card-text">La ciudad del amor con monumentos icónicos y gastronomía inolvidable.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price" aria-hidden="true">Desde <strong>$300</strong></span>
+                <a href="destinos.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Nueva York -->
+        <article class="col">
+          <div class="card h-100 shadow-sm card-stand">
+            <img src="img/nueva york.jpg"
+                 class="card-img-top" alt="Nueva York - Empire State y skyline, USA">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Nueva York, USA</h3>
+              <p class="card-text">La ciudad que nunca duerme, arte, teatro y skyline emblemático.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">Desde <strong>$200</strong></span>
+                <a href="destinos.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tokio -->
+        <article class="col">
+          <div class="card h-100 shadow-sm card-stand">
+            <img src="img/tokio.jpg"
+                 class="card-img-top" alt="Tokio, Japón - Skyline y torre">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Tokio, Japón</h3>
+              <p class="card-text">Fusión de tradición y vanguardia: templos, rascacielos y gastronomía.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">Desde <strong>$500</strong></span>
+                <a href="destinos.html" class="btn btn-outline-dark btn-sm">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PAQUETES -->
+    <section id="paquetes-recomendados" class="mb-5">
+      <h2 class="section-title">Paquetes recomendados</h2>
+      <p class="section-sub">Ofertas especiales seleccionadas para ti</p>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <article class="col">
+          <div class="card h-100 shadow-sm card-stand">
+            <img src="img/europa.jpg"
+                 class="card-img-top" alt="Tour Europa - ciudades y monumentos">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Tour Europa Clásica</h3>
+              <p class="card-text">París, Roma, Barcelona. Incluye vuelos y hoteles.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price price-large">$1,799</span>
+                <a href="paquetes.html" class="btn btn-dark btn-sm">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100 shadow-sm card-stand">
+            <img src="img/caribe.jpg"
+                 class="card-img-top" alt="Caribe - playa y mar">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Caribe All Inclusive</h3>
+              <p class="card-text">Cancún o Punta Cana. Todo incluido y actividades acuáticas.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price price-large">$1,299</span>
+                <a href="paquetes.html" class="btn btn-dark btn-sm">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100 shadow-sm card-stand">
+            <img src="img/safari.jpg"
+                 class="card-img-top" alt="Safari Kenia - animales y sabana">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Safari en Kenia</h3>
+              <p class="card-text">Experiencia única en la sabana africana.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price price-large">$3,499</span>
+                <a href="paquetes.html" class="btn btn-dark btn-sm">Reservar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="opiniones" class="mb-5">
+      <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <article class="col">
+          <div class="card p-3 shadow-sm h-100">
+            <div class="d-flex align-items-center gap-3">
+              <img src="img/persona1.jpg" alt="María González (avatar)" class="avatar">
+              <div>
+                <p class="mb-1">"Increíble experiencia en París. Todo perfectamente organizado."</p>
+                <small class="text-muted">— María González</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card p-3 shadow-sm h-100">
+            <div class="d-flex align-items-center gap-3">
+              <img src="img/persona2.jpg" alt="Carlos Ruiz (avatar)" class="avatar">
+              <div>
+                <p class="mb-1">"El safari en Kenia superó todas mis expectativas. Una aventura inolvidable."</p>
+                <small class="text-muted">— Carlos Ruiz</small>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card p-3 shadow-sm h-100">
+            <div class="d-flex align-items-center gap-3">
+              <img src="img/persona3.jpg" alt="Ana López (avatar)" class="avatar">
+              <div>
+                <p class="mb-1">"Bali fue un sueño hecho realidad. Todo perfecto."</p>
+                <small class="text-muted">— Ana López</small>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter bg-light p-4 rounded">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <div>
+          <h3 class="mb-1">¿Listo para tu próxima aventura?</h3>
+          <p class="mb-0 text-muted">Suscribite y recibí ofertas exclusivas.</p>
+        </div>
+        <form class="d-flex mt-3 mt-md-0" role="search" aria-label="Suscripción newsletter">
+          <input type="email" class="form-control me-2" placeholder="Tu email" aria-label="Email">
+          <button class="btn btn-primary" type="submit">Suscribirse</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (mismo en todas las páginas) -->
+  <footer class="site-footer mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Nombre Agencia</h5>
+          <p class="mb-0">Tu agencia de viajes de confianza.</p>
+        </div>
+        <div class="col-md-3">
+          <h6>Enlaces rápidos</h6>
+          <ul class="list-unstyled">
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="paquetes.html">Paquetes</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Soporte</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Cancelaciones</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Contacto</h6>
+          <ul class="list-unstyled">
+            <li>📞 123456789</li>
+            <li>✉️ correo@gmail.com</li>
+            <li>📍 Calle falsa 123</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center mt-3">
+        <small class="text-muted">© 2025 Nombre Agencia. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
